@@ -410,3 +410,45 @@ kustomize build | kubectl apply -f -
 ## License
 
 [License](LICENSE.md)
+
+---
+
+## Deployment and Submission Evidence
+
+### Live Application
+
+- **Frontend:** [Movie Picture Pipeline](http://a5a0252fdf2c34542beca9dbce793637-776225390.us-east-1.elb.amazonaws.com)
+- **Backend API:** [Movies API — JSON Response](http://acd248471327d452d83337a43fdfb1ba-1472909215.us-east-1.elb.amazonaws.com/movies)
+
+The frontend displays the available movies and lets users view movie details. The backend API returns movie data in JSON format.
+
+### CI/CD Workflows
+
+The repository includes four GitHub Actions workflows:
+
+- Frontend Continuous Integration
+- Backend Continuous Integration
+- Frontend Continuous Deployment
+- Backend Continuous Deployment
+
+Both Continuous Deployment workflows completed successfully.
+
+[View GitHub Actions runs](https://github.com/Dharanya724/cd12354-Movie-Picture-Pipeline/actions)
+
+### Screenshots
+
+#### Deployed Frontend
+
+![Deployed frontend homepage](Screenshots/frontend-homepage.png)
+
+#### Backend API Response
+
+![Backend API JSON response](Screenshots/backend-api.png)
+
+#### Frontend Continuous Deployment
+
+![Frontend CD workflow success](Screenshots/frontend-cd-success.png)
+
+#### Backend Continuous Deployment
+
+![Backend CD workflow success](Screenshots/backend-cd-success.png)
